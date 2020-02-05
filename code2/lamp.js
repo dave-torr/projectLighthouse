@@ -1,4 +1,4 @@
-// Lamp rendering
+// Flame indicator rendering
 let flameMax = new Image();
 let flameReg = new Image();
 let flameSml = new Image();
@@ -17,12 +17,24 @@ function darknessBreaker(){
         ctx.drawImage(flameMax, 0, 570, flameWidth, flameHeight);
       } else if (velocity > 0 && velocity <1.5){
         ctx.drawImage(flameReg, 0, 570, flameWidth, flameHeight);
-        console.log("flameReg");
+        // console.log("flameReg");
       } else if (velocity > 1.5 && velocity <4){
         ctx.drawImage(flameSml, 0, 570, flameWidth, flameHeight);
-        console.log("flameSml");
+        // console.log("flameSml");
       } else if (velocity > 4){
         ctx.drawImage(flameBlu, 0, 570, flameWidth, flameHeight);
-        console.log("flameBlu");
+        // console.log("flameBlu");
       }
 }
+
+// Lamp rendering
+let lamp = new Image();
+lamp.src = '/module1/project1/images/lantern.png';
+let lampy = 610;
+function lanternDraw(){
+    ctx.drawImage(lamp, 263, lampy, 25, 30);
+    }
+
+// Lighthouse ON
+let fernelOn = [];
+

@@ -49,6 +49,8 @@ function hurricane(){
   }
 
   
-  
+  function fadeout(){
+    setInterval()
+  }
 
 

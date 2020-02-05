@@ -7,7 +7,7 @@ let keeperHeight = keeper.height //0px height
 let walk = 0;
 let counter = 0;
 let canvasPositionX = 220; 
-let canvasPositionY = 570; 
+let canvasPositionY = 580; 
 
 function charMovement(){   
     
@@ -26,11 +26,17 @@ function charMovement(){
 
 let velocity = 0;
 let distance = 100;
+let KeepersPath = 0;
+let killerSpeed = 0;
 
 // right movement
 document.onkeydown = function(e) { 
   switch (e.keyCode) { 
-      case 39: velocity+=0.05;  canvasPositionY-=0.1; positionIn-=5; counter+=1; distance-=velocity; console.log(`${distance} left`);  break;
+      case 39: velocity+=0.05; lampy-=0.15; KeepersPath+=1; 
+      canvasPositionY-=0.11; positionIn-=5; 
+      counter+=1; distance-=velocity; 
+    //   console.log(`${distance} left`);  
+      break;
   } }
 document.onkeyup = function(e) { 
   switch (e.keyCode) { 
@@ -48,15 +54,17 @@ document.onkeyup = function(e) {
 //     } }
   
 function velocityCheck(){
+    console.log(velocity);
+
   if (velocity > 0 && velocity <1.5){
     positionIn-=1;
-    console.log(distance);
   } else if (velocity > 1.5 && velocity <4){
-    console.log(distance);
+    // console.log(distance);
     positionIn-=2;
     counter+=3;   
-  } else if (velocity > 4){
-    console.log("DEATH", distance)
+  } else if (velocity > 4.5){
+    // console.log("DEATH", distance);
+    // ctx.globalAlpha = 0.7;
   } }
 
 

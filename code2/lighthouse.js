@@ -11,3 +11,11 @@ function lightHouseEnd(){
     ctx.drawImage(lightHs, positionIn, 180, 3960, 532)
 
 }    
+
+let lighhouseWin = new Image();
+lighhouseWin.src = '../images/backgrounds/arrivalLh.png'
+function arrival(){
+    ctx.drawImage(lighhouseWin, 0, 180, 728, 532)
+    
+} 
+
