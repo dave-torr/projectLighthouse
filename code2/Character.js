@@ -7,7 +7,7 @@ let keeperHeight = keeper.height //0px height
 let walk = 0;
 let counter = 0;
 let canvasPositionX = 220; 
-let canvasPositionY = 580; 
+let canvasPositionY = 590; 
 
 function charMovement(){   
     
@@ -27,20 +27,20 @@ function charMovement(){
 let velocity = 0;
 let distance = 100;
 let KeepersPath = 0;
-let killerSpeed = 0;
+
 
 // right movement
 document.onkeydown = function(e) { 
   switch (e.keyCode) { 
-      case 39: velocity+=0.05; lampy-=0.15; KeepersPath+=1; 
+      case 39: velocity+=0.05; lampy-=0.11; KeepersPath+=1; 
       canvasPositionY-=0.11; positionIn-=5; 
-      counter+=1; distance-=velocity; 
+      counter+=1; distance-=velocity;
     //   console.log(`${distance} left`);  
       break;
   } }
 document.onkeyup = function(e) { 
   switch (e.keyCode) { 
-      case 39: velocity = 0; counter=0; break;
+      case 39: velocity = 0; counter=0; ctx.globalAlpha = 1; break;
   } }
 
 //   LEFT MOVEMENT
@@ -59,15 +59,22 @@ function velocityCheck(){
   if (velocity > 0 && velocity <1.5){
     positionIn-=1;
   } else if (velocity > 1.5 && velocity <4){
-    // console.log(distance);
     positionIn-=2;
     counter+=3;   
   } else if (velocity > 4.5){
     // console.log("DEATH", distance);
-    // ctx.globalAlpha = 0.7;
   } }
 
-
+let gameOver = new Image();
+gameOver.src = '../images/gameOverScreen.png'
+function deathBySpeed(){
+  ctx.drawImage(gameOver, (canvas.width/2-220), 0, );
+  document.onkeydown = function(e) { 
+    switch (e.keyCode) { 
+        case 32: location.reload();   
+        break;
+    } }
+}
 
 
 

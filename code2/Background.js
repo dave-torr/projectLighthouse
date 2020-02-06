@@ -1,3 +1,11 @@
+// // second Canvas
+// const canvas2 = document.querySelector('#winCanvas');
+// // determine width and height variables
+// canvas2.width = window.innerWidth; 
+// canvas2.height = window.innerHeight;
+// // set context of animation
+// const ctx2 = canvas2.getContext('2d');
+
 
 var rainDensity = 800;
 // alter rain density and speed of movement when speed reaches certain objectives.
@@ -48,9 +56,5 @@ function hurricane(){
     }
   }
 
-  
-  function fadeout(){
-    setInterval()
-  }
 
 
