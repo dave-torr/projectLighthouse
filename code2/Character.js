@@ -1,6 +1,6 @@
   //   Character Rendering:
 let keeper = new Image()
-keeper.src = '/module1/project1/images/character/keeper2.png'
+keeper.src = '../images/character/keeper2.png'
 let keeperWidth = 63.88// 575px width
 let keeperHeight = keeper.height //0px height
 
