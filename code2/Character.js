@@ -1,6 +1,6 @@
   //   Character Rendering:
 let keeper = new Image()
-keeper.src = '../images/character/keeper2.png'
+keeper.src = 'images/character/keeper2.png'
 let keeperWidth = 63.88// 575px width
 let keeperHeight = keeper.height //0px height
 
@@ -66,7 +66,7 @@ function velocityCheck(){
   } }
 
 let gameOver = new Image();
-gameOver.src = '../images/gameOverScreen.png'
+gameOver.src = 'images/gameOverScreen.png'
 function deathBySpeed(){
   ctx.drawImage(gameOver, (canvas.width/2-220), 0, );
   document.onkeydown = function(e) { 

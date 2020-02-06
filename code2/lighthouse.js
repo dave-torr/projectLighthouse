@@ -1,11 +1,11 @@
 
 
 let lightHs = new Image();
-lightHs.src = "../images/backgrounds/lightHsFnl.png";
+lightHs.src = "images/backgrounds/lightHsFnl.png";
 let finishTxt =new Image();
-finishTxt.src = "../images/arrivalTxt.png";
+finishTxt.src = "images/arrivalTxt.png";
 let lighhouseWin = new Image();
-lighhouseWin.src = '../images/backgrounds/arrivalLh.png';
+lighhouseWin.src = 'images/backgrounds/arrivalLh.png';
 
 let backgroundImage = {
     img: lightHs,

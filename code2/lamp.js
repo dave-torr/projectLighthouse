@@ -4,10 +4,10 @@ let flameReg = new Image();
 let flameSml = new Image();
 let flameBlu = new Image();
 
-flameMax.src = '../images/flame/flameMax.png';
-flameReg.src = '../images/flame/flameReg.png';
-flameSml.src = '../images/flame/flameSml.png';
-flameBlu.src = '../images/flame/flameBlu.png';
+flameMax.src = 'images/flame/flameMax.png';
+flameReg.src = 'images/flame/flameReg.png';
+flameSml.src = 'images/flame/flameSml.png';
+flameBlu.src = 'images/flame/flameBlu.png';
 
 let flameWidth = 63;
 let flameHeight = 80;
@@ -29,7 +29,7 @@ function darknessBreaker(){
 
 // Lamp rendering
 let lamp = new Image();
-lamp.src = '../images/lantern.png';
+lamp.src = 'images/lantern.png';
 let lampy = 610;
 function lanternDraw(){
     ctx.drawImage(lamp, 263, lampy, 25, 30);

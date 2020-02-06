@@ -40,12 +40,12 @@ function hurricane(){
       thundr.title=title
       return thundr;
   }
-  thunderArr.push(createThunder("../images/backgrounds/thunder1.png", "thunder"));
-  thunderArr.push(createThunder("../images/backgrounds/thunder2.png","thunder"));
-  thunderArr.push(createThunder("../images/backgrounds/thunder3.png","thunder"));
-  thunderArr.push(createThunder("../images/backgrounds/thunder4.png","thunder"));
-  thunderArr.push(createThunder("../images/backgrounds/thunder5.png","thunder"));
-  thunderArr.push(createThunder("../images/backgrounds/thunder6.png","thunder"));
+  thunderArr.push(createThunder("images/backgrounds/thunder1.png", "thunder"));
+  thunderArr.push(createThunder("images/backgrounds/thunder2.png","thunder"));
+  thunderArr.push(createThunder("images/backgrounds/thunder3.png","thunder"));
+  thunderArr.push(createThunder("images/backgrounds/thunder4.png","thunder"));
+  thunderArr.push(createThunder("images/backgrounds/thunder5.png","thunder"));
+  thunderArr.push(createThunder("images/backgrounds/thunder6.png","thunder"));
   let fps = 0;
   let thunTimer = 400
   let thundertiming = Math.floor(Math.random()*thunTimer)
