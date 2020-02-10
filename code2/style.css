@@ -1,9 +1,4 @@
 body {
     background-color: black;
-    overflow: hidden;
-    
-}
-
-#backgroundCanvas {
-    border: brown;
+    overflow: hidden;  
 }

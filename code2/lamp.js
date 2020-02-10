@@ -30,9 +30,9 @@ function darknessBreaker(){
 // Lamp rendering
 let lamp = new Image();
 lamp.src = 'images/lantern.png';
-let lampy = 610;
+let lampy = 617;
 function lanternDraw(){
-    ctx.drawImage(lamp, 263, lampy, 25, 30);
+    ctx.drawImage(lamp, 544, lampy, 25, 30);
     }
 
 // Lighthouse ON
